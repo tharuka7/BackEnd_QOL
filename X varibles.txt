@@ -1,0 +1,185 @@
+X varibles
+
+
+Satisfied With Life 1
+
+Disagree: 1
+Slightly agree: 3
+Strongly agree: 5
+Agree: 0
+Neither agree or disagree: 2
+Slightly disagree: 4
+Strongly disagree: 6
+
+
+Satisfied With Life 2
+
+Disagree: 1
+Agree: 0
+Strongly agree: 5
+Neither agree or disagree: 2
+Slightly agree: 3
+Slightly disagree: 4
+Strongly disagree: 6
+
+
+Present Mental Health
+
+Good: 2
+Excellent: 0
+Very Good: 4
+Fair: 1
+Poor: 3
+
+
+English Speaking
+
+Well: 3
+Very well: 2
+Not well: 1
+Not at all: 0
+
+
+Income
+
+$0 - $9,999: 0
+$70,000 and over: 7
+$50,000 - $59,999: 5
+$20,000 - $29,999: 2
+$30,000 - $39,999: 3
+$40,000 - $49,999: 4
+$60,000 - $69,999: 6
+$10,000 - $19,999: 1
+
+
+Present Health
+
+Very Good: 4
+Excellent: 0
+Good: 2
+Poor: 3
+Fair: 1
+
+
+Satisfaction With Housing.
+
+Pretty much: 2
+Very much: 3
+Not very much: 1
+Not at all: 0
+
+
+Present Oral Health
+
+Good: 2
+Excellent: 0
+Very Good: 4
+Fair: 1
+Poor: 3
+
+
+Language
+
+English: 3
+Viet: 8
+Tagalog: 7
+Chinese Traditional: 1
+Chinese Simplified: 0
+Eng_Chinese only: 2
+Gujarati: 4
+Korean: 6
+Hindi: 5
+
+
+Interpretation (Medical)
+
+No: 0
+Yes: 1
+
+
+Comunication Problem
+
+No: 0
+Yes: 1
+
+
+Achieving Ends Meet
+
+No: 0
+Yes: 1
+
+
+Familiarity with America
+
+Low: 1
+Very high: 2
+High: 0
+Very low: 3
+
+
+English Difficulties
+
+Much: 0
+Not at all: 1
+Very much: 3
+Not much: 2
+
+
+Ethnicity
+
+Chinese: 1
+Asian Indian: 0
+Vietnamese: 5
+Filipino: 2
+Korean: 3
+Other: 4
+
+
+Small Businesses
+
+Good: 2
+Fair: 1
+Excellent: 0
+Poor: 3
+
+
+
+Religious Attendance
+
+Once or twice a month: 2
+Never: 1
+Seldom: 3
+A few times a year: 0
+
+
+Parks and Recs
+
+Pretty much satisfied: 3
+Never used: 0
+Not very much satisfied: 2
+Very much satisfied: 4
+Not at all satisfied: 1
+
+
+Place to Work
+
+Good: 2
+Excellent: 0
+Fair: 1
+Poor: 3
+
+
+Airport
+
+Never used: 0
+Pretty much satisfied: 3
+Not very much satisfied: 2
+Very much satisfied: 4
+Not at all satisfied: 1
+
+-----------------------------------------------------------------------------------------------------
+predict the response
+
+'Quality of Life'
+
+{'Good': 0, 'Moderate': 1, 'Poor': 2}}
