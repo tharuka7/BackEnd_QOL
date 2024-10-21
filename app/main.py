@@ -7,7 +7,7 @@ app = FastAPI()
 
 
 origins = [
-    "http://localhost:3000",
+    "https://black-river-065d1510f.5.azurestaticapps.net",
 ]
 
 app.add_middleware(
