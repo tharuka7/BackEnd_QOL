@@ -1,26 +1,21 @@
 # app/models.py
-from pydantic import BaseModel
 from typing import List
 
-class QualityOfLifeInput(BaseModel):
-    satisfied_with_life_1: int
-    satisfied_with_life_2: int
-    present_mental_health: int
-    english_speaking: int
-    income: int
-    present_health: int
-    satisfaction_with_housing: int
-    present_oral_health: int
-    language: int
-    interpretation_medical: int
-    communication_problem: int
-    achieving_ends_meet: int
-    familiarity_with_america: int
-    english_difficulties: int
-    ethnicity: int
-    small_businesses: int
-    religious_attendance: int
-    parks_and_recs: int
-    place_to_work: int
-    airport: int
+from pydantic import BaseModel
 
+
+class QualityOfLifeInput(BaseModel):
+    familiarity_with_ethnic_origin: int
+    smoke_detector: int
+    airport: int
+    full_time_employment: int
+    access_to_a_computer: int
+    student: int
+    parks_and_recs: int
+    city_effort_satisfaction: int
+    nursing_home: int
+    ethnicity: int
+    public_safety: int
+    libraries: int
+    home_phone: int
+    mobile_devices: int

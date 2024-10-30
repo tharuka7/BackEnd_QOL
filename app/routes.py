@@ -1,5 +1,6 @@
 # app/routes.py
 from fastapi import APIRouter
+
 from app.models import QualityOfLifeInput
 from app.services import predict_quality_of_life
 
@@ -9,26 +10,20 @@ router = APIRouter()
 def predict(input_data: QualityOfLifeInput):
     # Convert input data from Pydantic model to list format
     input_data_list = [
-        input_data.satisfied_with_life_1,
-        input_data.satisfied_with_life_2,
-        input_data.present_mental_health,
-        input_data.english_speaking,
-        input_data.income,
-        input_data.present_health,
-        input_data.satisfaction_with_housing,
-        input_data.present_oral_health,
-        input_data.language,
-        input_data.interpretation_medical,
-        input_data.communication_problem,
-        input_data.achieving_ends_meet,
-        input_data.familiarity_with_america,
-        input_data.english_difficulties,
-        input_data.ethnicity,
-        input_data.small_businesses,
-        input_data.religious_attendance,
+        input_data.familiarity_with_ethnic_origin,
+        input_data.smoke_detector,
+        input_data.airport,
+        input_data.full_time_employment,
+        input_data.access_to_a_computer,
+        input_data.student,
         input_data.parks_and_recs,
-        input_data.place_to_work,
-        input_data.airport
+        input_data.city_effort_satisfaction,
+        input_data.nursing_home,
+        input_data.ethnicity,
+        input_data.public_safety,
+        input_data.libraries,
+        input_data.home_phone,
+        input_data.mobile_devices
     ]
 
     # Call the prediction function
