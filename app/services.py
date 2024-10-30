@@ -1,20 +1,19 @@
 # app/services.py
-import pandas as pd
 import pickle
 
+import pandas as pd
+
 # Load the model from the pkl file (only once to avoid reloading in each request)
-with open('rf_classifier_top.pkl', 'rb') as file:
+with open('stacking_clf.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Define the function to predict the 'Quality of Life'
 def predict_quality_of_life(input_data):
     feature_names = [
-        'Satisfied With Life 1', 'Satisfied With Life 2', 'Present Mental Health',
-        'English Speaking', 'Income', 'Present Health', 'Satisfaction With Housing.',
-        'Present Oral Health', 'Language', 'Interpretation (Medical)',
-        'Comunication Problem', 'Achieving Ends Meet', 'Familiarity with America',
-        'English Difficulties', 'Ethnicity', 'Small Businesses ', 
-        'Religious Attendance', 'Parks and Recs', 'Place to Work', 'Airport'
+        'Familiarity with Ethnic Origin', 'Smoke Detector', 'Airport',
+        'Full Time Employment', 'Access to a Computer', 'Student', 
+        'Parks and Recs', 'City Effort Satisfaction', 'Nursing Home', 
+        'Ethnicity', 'Public Safety', 'Libraries', 'Home Phone', 'Mobile Devices'
     ]
 
     # Convert input data to DataFrame
@@ -28,5 +27,5 @@ def predict_quality_of_life(input_data):
     prediction = model.predict(input_df)
 
     # Map the prediction to quality of life
-    quality_of_life_mapping = {0: 'Good', 1: 'Moderate', 2: 'Poor'}
+    quality_of_life_mapping = {0: 'Poor', 1: 'Moderate', 2: 'Good'}
     return quality_of_life_mapping[prediction[0]]

@@ -1,14 +1,13 @@
 # app/main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
 from app.routes import router
 
 app = FastAPI()
 
 
-# origins = [
-#     "https://black-river-065d1510f.5.azurestaticapps.net",
-# ]
+
 
 app.add_middleware(
     CORSMiddleware,
