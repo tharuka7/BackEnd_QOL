@@ -7,9 +7,7 @@ from app.routes import router
 app = FastAPI()
 
 
-# origins = [
-#     "http://localhost:3000",
-# ]
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -25,3 +23,9 @@ app.include_router(router)
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the Quality of Life Prediction API!"}
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=8000)
